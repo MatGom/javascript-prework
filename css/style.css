@@ -26,6 +26,18 @@ h1 {
   color: #dcdde1;
 }
 
+h1 .rock {
+  color: #c23616;
+}
+
+h1 .paper {
+  color: #fbc531;
+}
+
+h1 .scissors {
+  color: #4cd137;
+}
+
 .container {
   position: absolute;
   top: 50%;

@@ -1,6 +1,9 @@
 $color-one: #273c75;
 $color-two: #dcdde1;
 $color-three: #e84118;
+$rock-color: #c23616;
+$paper-color: #fbc531;
+$scissors-color: #4cd137;
 
 $font-one: 'Montserrat', sans-serif;
 $font-two: 'Mouse Memoirs', sans-serif;
@@ -30,6 +33,18 @@ h1 {
 	font-size: 60px;
 	letter-spacing: 5px;
 	color: $color-two;
+
+    .rock {
+        color: $rock-color;
+    }
+
+    .paper {
+        color: $paper-color;
+    }
+
+    .scissors {
+        color: $scissors-color;
+    }
 }
 
 .container {
