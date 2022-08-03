@@ -50,6 +50,17 @@ h1 {
   background: #dcdde1;
 }
 
+.container .info {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.container .info i {
+  font-size: 24px;
+  color: #273c75;
+}
+
 .container .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
