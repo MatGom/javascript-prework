@@ -32,6 +32,7 @@ h1 {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  padding: 0.5em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -86,7 +87,7 @@ h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 200px;
+  width: 40%;
   height: 100px;
   text-transform: uppercase;
 }
@@ -108,14 +109,21 @@ h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 100%;
 }
 
 .wrapper #buttons button {
-  width: 150px;
+  width: 160px;
   height: 50px;
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
   cursor: pointer;
+}
+
+.wrapper #buttons .reset-btn {
+  margin-top: 20px;
+  width: 60%;
 }
 /*# sourceMappingURL=style.css.map */
