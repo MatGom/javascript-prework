@@ -29,3 +29,19 @@ if (playerInput == '1') {
 }
 
 printMessage('Your move is: ' + playerMove)
+
+if (
+	(computerMove == 'rock' && playerMove == 'paper') ||
+	(computerMove == 'paper' && playerMove == 'scissors') ||
+	(computerMove == 'scissors' && playerMove == 'rock')
+) {
+	printMessage('You win!')
+} else if (
+	(computerMove == 'rock' && playerMove == 'rock') ||
+	(computerMove == 'paper' && playerMove == 'paper') ||
+	(computerMove == 'scissors' && playerMove == 'scissors')
+) {
+	printMessage('Draw!')
+} else {
+	printMessage('You lose!')
+}
