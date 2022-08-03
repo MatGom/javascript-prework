@@ -32,4 +32,22 @@ body {
 }
 
 .wrapper {
+	display: flex;
+	height: 80%;
+	width: 80%;
+
+	#buttons {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		align-self: flex-end;
+		width: 100%;
+
+		button {
+			width: 150px;
+			height: 50px;
+			text-transform: uppercase;
+			cursor: pointer;
+		}
+	}
 }

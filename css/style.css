@@ -35,4 +35,33 @@ body {
   border-radius: 10px;
   background: #dcdde1;
 }
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 80%;
+  width: 80%;
+}
+
+.wrapper #buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  width: 100%;
+}
+
+.wrapper #buttons button {
+  width: 150px;
+  height: 50px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
 /*# sourceMappingURL=style.css.map */
