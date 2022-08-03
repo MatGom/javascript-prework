@@ -8,12 +8,31 @@
 }
 
 body {
+  position: relative;
+  height: 100vh;
   background: #273c75;
 }
 
 .container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0 auto;
+  height: 60vh;
+  width: 70vw;
   max-width: 1000px;
+  border-radius: 10px;
   background: #dcdde1;
 }
 /*# sourceMappingURL=style.css.map */
