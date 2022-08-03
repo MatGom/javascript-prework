@@ -16,8 +16,10 @@ function playGame(playerInput) {
 	}
 
 	function displayResult(argComputerMove, argPlayerMove) {
-		printMessage('My move is: ' + computerMove)
-		printMessage('Your move is: ' + playerMove)
+		printMessage('Your move is')
+		printMessage('My move is')
+		printMessage(playerMove)
+		printMessage(computerMove)
 
 		if (
 			(argComputerMove == 'rock' && argPlayerMove == 'paper') ||
