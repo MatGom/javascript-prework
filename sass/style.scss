@@ -1,5 +1,9 @@
 $color-one: #273c75;
 $color-two: #dcdde1;
+$color-three: #e84118;
+
+$font-one: 'Montserrat', sans-serif;
+$font-two: 'Mouse Memoirs', sans-serif;
 
 *,
 *::after,
@@ -13,6 +17,19 @@ body {
 	position: relative;
 	height: 100vh;
 	background: $color-one;
+	font-family: $font-one;
+}
+
+h1 {
+	position: absolute;
+	top: 80px;
+	left: 0;
+	right: 0;
+	text-align: center;
+	font-family: $font-two;
+	font-size: 60px;
+	letter-spacing: 5px;
+	color: $color-two;
 }
 
 .container {
@@ -55,8 +72,10 @@ body {
 
 			&:last-of-type {
 				font-weight: bold;
-				font-size: 30px;
+				font-size: 50px;
 				border-bottom: 2px solid black;
+				letter-spacing: 4px;
+				font-family: $font-two;
 			}
 		}
 	}
@@ -71,6 +90,7 @@ body {
 			width: 150px;
 			height: 50px;
 			text-transform: uppercase;
+			font-family: $font-one;
 			cursor: pointer;
 		}
 	}
