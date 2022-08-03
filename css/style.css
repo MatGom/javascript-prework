@@ -141,14 +141,64 @@ h1 .scissors {
 .container .wrapper #buttons button {
   width: 160px;
   height: 50px;
+  font-size: 18px;
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
+  background: transparent;
+  border: 2px solid transparent;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
   cursor: pointer;
+}
+
+.container .wrapper #buttons #play-rock {
+  color: #c23616;
+  -webkit-box-shadow: 0 0 7px #c23616;
+          box-shadow: 0 0 7px #c23616;
+}
+
+.container .wrapper #buttons #play-rock:hover {
+  background: #c23616;
+  color: #dcdde1;
+  letter-spacing: 2px;
+}
+
+.container .wrapper #buttons #play-paper {
+  color: #fbc531;
+  -webkit-box-shadow: 0 0 7px #fbc531;
+          box-shadow: 0 0 7px #fbc531;
+}
+
+.container .wrapper #buttons #play-paper:hover {
+  background: #fbc531;
+  color: #dcdde1;
+  letter-spacing: 2px;
+}
+
+.container .wrapper #buttons #play-scissors {
+  color: #4cd137;
+  -webkit-box-shadow: 0 0 7px #4cd137;
+          box-shadow: 0 0 7px #4cd137;
+}
+
+.container .wrapper #buttons #play-scissors:hover {
+  background: #4cd137;
+  color: #dcdde1;
+  letter-spacing: 2px;
 }
 
 .container .wrapper #buttons .reset-btn {
   margin-top: 20px;
   width: 60%;
+  color: #40739e;
+  -webkit-box-shadow: 0 0 7px #40739e;
+          box-shadow: 0 0 7px #40739e;
+}
+
+.container .wrapper #buttons .reset-btn:hover {
+  background: #40739e;
+  color: #dcdde1;
+  letter-spacing: 3px;
 }
 
 .container .wrapper .statistics {

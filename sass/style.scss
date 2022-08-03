@@ -4,6 +4,7 @@ $color-three: #e84118;
 $rock-color: #c23616;
 $paper-color: #fbc531;
 $scissors-color: #4cd137;
+$reset-color: #40739e;
 
 $font-one: 'Montserrat', sans-serif;
 $font-two: 'Mouse Memoirs', sans-serif;
@@ -34,17 +35,17 @@ h1 {
 	letter-spacing: 5px;
 	color: $color-two;
 
-    .rock {
-        color: $rock-color;
-    }
+	.rock {
+		color: $rock-color;
+	}
 
-    .paper {
-        color: $paper-color;
-    }
+	.paper {
+		color: $paper-color;
+	}
 
-    .scissors {
-        color: $scissors-color;
-    }
+	.scissors {
+		color: $scissors-color;
+	}
 }
 
 .container {
@@ -117,14 +118,59 @@ h1 {
 			button {
 				width: 160px;
 				height: 50px;
+				font-size: 18px;
 				text-transform: uppercase;
 				font-family: $font-one;
+				background: transparent;
+				border: 2px solid transparent;
+				transition: all 0.3s;
 				cursor: pointer;
+			}
+
+			#play-rock {
+				color: $rock-color;
+				box-shadow: 0 0 7px $rock-color;
+
+				&:hover {
+					background: $rock-color;
+					color: $color-two;
+					letter-spacing: 2px;
+				}
+			}
+
+			#play-paper {
+				color: $paper-color;
+				box-shadow: 0 0 7px $paper-color;
+
+				&:hover {
+					background: $paper-color;
+					color: $color-two;
+					letter-spacing: 2px;
+				}
+			}
+
+			#play-scissors {
+				color: $scissors-color;
+				box-shadow: 0 0 7px $scissors-color;
+
+				&:hover {
+					background: $scissors-color;
+					color: $color-two;
+					letter-spacing: 2px;
+				}
 			}
 
 			.reset-btn {
 				margin-top: 20px;
 				width: 60%;
+				color: $reset-color;
+				box-shadow: 0 0 7px $reset-color;
+
+				&:hover {
+					background: $reset-color;
+					color: $color-two;
+					letter-spacing: 3px;
+				}
 			}
 		}
 
