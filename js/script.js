@@ -16,7 +16,7 @@ function playGame(playerInput) {
 	}
 
 	function displayResult(argComputerMove, argPlayerMove) {
-		printMessage('My move is ' + computerMove)
+		printMessage('My move is: ' + computerMove)
 		printMessage('Your move is: ' + playerMove)
 
 		if (

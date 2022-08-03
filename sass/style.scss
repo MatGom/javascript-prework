@@ -1,0 +1,20 @@
+$color-one: #273c75;
+$color-two: #dcdde1;
+
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: $color-one;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 1000px;
+	background: $color-two;
+}

@@ -1,0 +1,19 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #273c75;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1000px;
+  background: #dcdde1;
+}
+/*# sourceMappingURL=style.css.map */
