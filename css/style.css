@@ -81,8 +81,14 @@ h1 {
   top: 20px;
   right: 20px;
   font-size: 24px;
-  color: #e84118;
+  color: #273c75;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
   cursor: pointer;
+}
+
+.info-popup i:hover {
+  color: #e84118;
 }
 
 .info-popup h2 {
@@ -147,7 +153,13 @@ h1 {
 .container .info i {
   font-size: 24px;
   color: #273c75;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
   cursor: pointer;
+}
+
+.container .info i:hover {
+  color: #00a8ff;
 }
 
 .container .wrapper {

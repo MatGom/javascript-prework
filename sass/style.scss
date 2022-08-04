@@ -9,6 +9,8 @@ $reset-color: #40739e;
 
 $option-icon-size: 24px;
 
+$transition: all 0.3s;
+
 $font-one: 'Montserrat', sans-serif;
 $font-two: 'Mouse Memoirs', sans-serif;
 
@@ -75,15 +77,20 @@ h1 {
 	background: $color-four;
 	border-radius: 20px;
 	z-index: 2;
-	transition: all 0.3s;
+	transition: $transition;
 
 	i {
 		position: absolute;
 		top: 20px;
 		right: 20px;
 		font-size: $option-icon-size;
-		color: $color-three;
+		color: $color-one;
+		transition: $transition;
 		cursor: pointer;
+
+		&:hover {
+			color: $color-three;
+		}
 	}
 
 	h2 {
@@ -112,7 +119,7 @@ h1 {
 	height: 100%;
 	background: rgba(0, 0, 0, 0.8);
 	z-index: 2;
-	transition: all 0.3s;
+	transition: $transition;
 }
 
 .container {
@@ -139,7 +146,12 @@ h1 {
 		i {
 			font-size: $option-icon-size;
 			color: $color-one;
+			transition: $transition;
 			cursor: pointer;
+
+			&:hover {
+				color: $color-four;
+			}
 		}
 	}
 
@@ -190,7 +202,7 @@ h1 {
 				font-family: $font-one;
 				background: transparent;
 				border: 2px solid transparent;
-				transition: all 0.3s;
+				transition: $transition;
 				cursor: pointer;
 			}
 
