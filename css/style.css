@@ -44,7 +44,7 @@ h1 {
   font-family: "Mouse Memoirs", sans-serif;
   font-size: 60px;
   letter-spacing: 5px;
-  color: #dcdde1;
+  color: #f5f6fa;
 }
 
 .info-popup {
@@ -135,7 +135,7 @@ h1 {
   width: 70vw;
   max-width: 1000px;
   border-radius: 10px;
-  background: #dcdde1;
+  background: #f5f6fa;
 }
 
 .container .info {
@@ -235,7 +235,7 @@ h1 {
 
 .container .wrapper #buttons #play-rock:hover {
   background: #c23616;
-  color: #dcdde1;
+  color: #f5f6fa;
   letter-spacing: 2px;
 }
 
@@ -247,7 +247,7 @@ h1 {
 
 .container .wrapper #buttons #play-paper:hover {
   background: #fbc531;
-  color: #dcdde1;
+  color: #f5f6fa;
   letter-spacing: 2px;
 }
 
@@ -259,7 +259,7 @@ h1 {
 
 .container .wrapper #buttons #play-scissors:hover {
   background: #4cd137;
-  color: #dcdde1;
+  color: #f5f6fa;
   letter-spacing: 2px;
 }
 
@@ -273,7 +273,7 @@ h1 {
 
 .container .wrapper #buttons .reset-btn:hover {
   background: #40739e;
-  color: #dcdde1;
+  color: #f5f6fa;
   letter-spacing: 3px;
 }
 
