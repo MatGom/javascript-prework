@@ -73,6 +73,8 @@ h1 {
   top: 20px;
   right: 20px;
   font-size: 24px;
+  color: #e84118;
+  cursor: pointer;
 }
 
 .info-popup h2 {
