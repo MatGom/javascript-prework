@@ -27,6 +27,21 @@ body {
 	font-family: $font-one;
 }
 
+.rock {
+	color: $rock-color;
+	font-weight: bold;
+}
+
+.paper {
+	color: $paper-color;
+	font-weight: bold;
+}
+
+.scissors {
+	color: $scissors-color;
+	font-weight: bold;
+}
+
 h1 {
 	position: absolute;
 	top: 80px;
@@ -37,18 +52,6 @@ h1 {
 	font-size: 60px;
 	letter-spacing: 5px;
 	color: $color-two;
-
-	.rock {
-		color: $rock-color;
-	}
-
-	.paper {
-		color: $paper-color;
-	}
-
-	.scissors {
-		color: $scissors-color;
-	}
 }
 
 .info-popup {
