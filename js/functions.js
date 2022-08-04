@@ -7,3 +7,13 @@ function printMessage(msg) {
 function clearMessages() {
 	document.getElementById('messages').innerHTML = ''
 }
+
+const showPopup = () => {
+	document.querySelector('.info-popup').classList.remove('hidden')
+	document.querySelector('.popup-shadow').classList.remove('hidden')
+}
+
+const closePopup = () => {
+	document.querySelector('.info-popup').classList.add('hidden')
+	document.querySelector('.popup-shadow').classList.add('hidden')
+}

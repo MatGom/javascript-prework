@@ -47,3 +47,5 @@ document.getElementById('play-scissors').addEventListener('click', function () {
 	playGame(3)
 })
 document.querySelector('.reset-btn').addEventListener('click', clearMessages)
+document.querySelector('.info').addEventListener('click', showPopup)
+document.querySelector('.close-info').addEventListener('click', closePopup)
