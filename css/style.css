@@ -38,6 +38,57 @@ h1 .scissors {
   color: #4cd137;
 }
 
+.info-popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  padding: 4em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 60%;
+  height: 55%;
+  background: #00a8ff;
+  border-radius: 20px;
+  z-index: 2;
+}
+
+.info-popup i {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 24px;
+}
+
+.info-popup h2 {
+  font-size: 50px;
+  letter-spacing: 4px;
+  font-family: "Mouse Memoirs", sans-serif;
+}
+
+.info-popup p {
+  width: 70%;
+  text-align: center;
+  font-size: 22px;
+}
+
+.info-popup p:last-of-type {
+  font-size: 26px;
+  font-weight: bold;
+}
+
 .container {
   position: absolute;
   top: 50%;

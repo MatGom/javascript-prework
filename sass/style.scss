@@ -1,10 +1,13 @@
 $color-one: #273c75;
 $color-two: #dcdde1;
 $color-three: #e84118;
+$color-four: #00a8ff;
 $rock-color: #c23616;
 $paper-color: #fbc531;
 $scissors-color: #4cd137;
 $reset-color: #40739e;
+
+$option-icon-size: 24px;
 
 $font-one: 'Montserrat', sans-serif;
 $font-two: 'Mouse Memoirs', sans-serif;
@@ -48,6 +51,47 @@ h1 {
 	}
 }
 
+.info-popup {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 4em;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	width: 60%;
+	height: 55%;
+	background: $color-four;
+	border-radius: 20px;
+	z-index: 2;
+
+	i {
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		font-size: $option-icon-size;
+	}
+
+	h2 {
+		font-size: 50px;
+		letter-spacing: 4px;
+		font-family: $font-two;
+	}
+
+	p {
+		width: 70%;
+		text-align: center;
+		font-size: 22px;
+
+		&:last-of-type {
+			font-size: 26px;
+			font-weight: bold;
+		}
+	}
+}
+
 .container {
 	position: absolute;
 	top: 50%;
@@ -70,7 +114,7 @@ h1 {
 		right: 20px;
 
 		i {
-			font-size: 24px;
+			font-size: $option-icon-size;
 			color: $color-one;
 			cursor: pointer;
 		}
