@@ -6,6 +6,11 @@ function printMessage(msg) {
 
 function clearMessages() {
 	document.getElementById('messages').innerHTML = ''
+	document.querySelector('.player-wins').textContent = 0
+	document.querySelector('.computer-wins').textContent = 0
+	document.querySelector('.player-rate').textContent = `0%`
+	document.querySelector('.computer-rate').textContent = `0%`
+	document.querySelector('.games-played').textContent = 0
 }
 
 const showPopup = () => {
