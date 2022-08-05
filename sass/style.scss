@@ -179,12 +179,22 @@ h1 {
 				height: 100px;
 				text-transform: uppercase;
 
+				&:nth-child(1),
+				&:nth-child(2) {
+					font-size: 22px;
+					font-weight: bold;
+				}
+
 				&:last-of-type {
 					font-weight: bold;
 					font-size: 50px;
 					border-bottom: 2px solid black;
 					letter-spacing: 4px;
 					font-family: $font-two;
+				}
+
+				img {
+					width: 70%;
 				}
 			}
 		}
