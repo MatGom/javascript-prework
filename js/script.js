@@ -3,6 +3,9 @@ let computerWins = 0
 let gamesPlayed = 0
 let playerWinrate = 0
 let computerWinrate = 0
+const rock = '<img src="images/rock_1.png">'
+const paper = '<img src="images/paper_1.png">'
+const scissors = '<img src="images/sci_1.png">'
 
 function playGame(playerInput) {
 	clearMessages()
@@ -16,11 +19,11 @@ function playGame(playerInput) {
 
 	function getMoveName(argMoveId) {
 		if (argMoveId == 1) {
-			return 'rock'
+			return rock
 		} else if (argMoveId == 2) {
-			return 'paper'
+			return paper
 		} else if (argMoveId == 3) {
-			return 'scissors'
+			return scissors
 		}
 	}
 
@@ -31,9 +34,9 @@ function playGame(playerInput) {
 		printMessage(computerMove)
 
 		if (
-			(argComputerMove == 'rock' && argPlayerMove == 'paper') ||
-			(argComputerMove == 'paper' && argPlayerMove == 'scissors') ||
-			(argComputerMove == 'scissors' && argPlayerMove == 'rock')
+			(argComputerMove == rock && argPlayerMove == paper) ||
+			(argComputerMove == paper && argPlayerMove == scissors) ||
+			(argComputerMove == scissors && argPlayerMove == rock)
 		) {
 			printMessage('You win!')
 			playerWins++
