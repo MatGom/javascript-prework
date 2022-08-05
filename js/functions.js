@@ -11,6 +11,7 @@ function clearMessages() {
 	document.querySelector('.player-rate').textContent = `0%`
 	document.querySelector('.computer-rate').textContent = `0%`
 	document.querySelector('.games-played').textContent = 0
+	document.querySelector('h3').style.display = 'block'
 }
 
 const showPopup = () => {

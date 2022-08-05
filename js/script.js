@@ -51,6 +51,8 @@ function playGame(playerInput) {
 		}
 	}
 
+	document.querySelector('h3').style.display = 'none'
+
 	displayResult(computerMove, playerMove)
 }
 

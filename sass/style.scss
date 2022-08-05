@@ -140,6 +140,13 @@ h1 {
 	background: $color-two linear-gradient($color-two, $color-five);
 	box-shadow: 0 0 4px $color-two;
 
+	h3 {
+		margin-top: -3em;
+		font-size: 36px;
+		text-align: center;
+		position: absolute;
+	}
+
 	.info {
 		position: absolute;
 		top: 20px;
