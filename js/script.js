@@ -1,5 +1,13 @@
+let playerWins = 0
+let computerWins = 0
+let gamesPlayed = 0
+let playerWinrate = 0
+
 function playGame(playerInput) {
 	clearMessages()
+
+	gamesPlayed++
+	document.querySelector('.games-played').textContent = gamesPlayed
 
 	let randomNumber = Math.floor(Math.random() * 3 + 1)
 	let computerMove = getMoveName(randomNumber)
@@ -27,10 +35,15 @@ function playGame(playerInput) {
 			(argComputerMove == 'scissors' && argPlayerMove == 'rock')
 		) {
 			printMessage('You win!')
+			playerWins++
+			calculateWinrate()
 		} else if (argComputerMove == argPlayerMove) {
 			printMessage('Draw!')
+			calculateWinrate()
 		} else {
 			printMessage('You lose!')
+			computerWins++
+			calculateWinrate()
 		}
 	}
 

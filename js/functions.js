@@ -17,3 +17,12 @@ const closePopup = () => {
 	document.querySelector('.info-popup').classList.add('hidden')
 	document.querySelector('.popup-shadow').classList.add('hidden')
 }
+
+const calculateWinrate = () => {
+	document.querySelector('.player-wins').textContent = playerWins
+	document.querySelector('.computer-wins').textContent = computerWins
+	playerWinrate = ((playerWins / gamesPlayed) * 100).toFixed(1)
+	document.querySelector('.player-rate').textContent = `${playerWinrate}%`
+	computerWinrate = ((computerWins / gamesPlayed) * 100).toFixed(1)
+	document.querySelector('.computer-rate').textContent = `${computerWinrate}%`
+}
