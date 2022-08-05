@@ -3,8 +3,7 @@
 *::before {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -51,59 +50,41 @@ h1 {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   padding: 4em;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   width: 60%;
   height: 55%;
-  background: #00a8ff -webkit-gradient(linear, left top, left bottom, from(#00a8ff), to(#273c75));
   background: #00a8ff linear-gradient(#00a8ff, #273c75);
   border-radius: 20px;
   z-index: 2;
-  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-
 .info-popup i {
   position: absolute;
   top: 20px;
   right: 20px;
   font-size: 24px;
   color: #273c75;
-  -webkit-transition: all 0.3s;
   transition: all 0.3s;
   cursor: pointer;
 }
-
 .info-popup i:hover {
   color: #e84118;
 }
-
 .info-popup h2 {
   font-size: 50px;
   letter-spacing: 4px;
   font-family: "Mouse Memoirs", sans-serif;
 }
-
 .info-popup p {
   width: 70%;
   text-align: center;
   font-size: 22px;
 }
-
 .info-popup p:last-of-type {
   font-size: 26px;
   font-weight: bold;
@@ -117,7 +98,6 @@ h1 {
   height: 100%;
   background: rgba(0, 0, 0, 0.8);
   z-index: 2;
-  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 
@@ -125,89 +105,55 @@ h1 {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   padding: 0.5em;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   margin: 0 auto;
   height: 60vh;
   width: 70vw;
   max-width: 1000px;
   border-radius: 10px;
-  background: #f5f6fa -webkit-gradient(linear, left top, left bottom, from(#f5f6fa), to(#7f8fa6));
   background: #f5f6fa linear-gradient(#f5f6fa, #7f8fa6);
-  -webkit-box-shadow: 0 0 4px #f5f6fa;
-          box-shadow: 0 0 4px #f5f6fa;
+  box-shadow: 0 0 4px #f5f6fa;
 }
-
 .container .info {
   position: absolute;
   top: 20px;
   right: 20px;
 }
-
 .container .info i {
   font-size: 24px;
   color: #273c75;
-  -webkit-transition: all 0.3s;
   transition: all 0.3s;
   cursor: pointer;
 }
-
 .container .info i:hover {
   color: #00a8ff;
 }
-
 .container .wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
   height: 80%;
   width: 80%;
 }
-
 .container .wrapper #messages {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: space-around;
   width: 100%;
   height: 500px;
 }
-
 .container .wrapper #messages div {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   width: 40%;
   height: 100px;
   text-transform: uppercase;
 }
-
 .container .wrapper #messages div:last-of-type {
   font-weight: bold;
   font-size: 50px;
@@ -215,21 +161,13 @@ h1 {
   letter-spacing: 4px;
   font-family: "Mouse Memoirs", sans-serif;
 }
-
 .container .wrapper #buttons {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
   width: 100%;
 }
-
 .container .wrapper #buttons button {
   width: 160px;
   height: 50px;
@@ -237,85 +175,63 @@ h1 {
   text-transform: uppercase;
   font-weight: bold;
   font-family: "Montserrat", sans-serif;
-  background: #f5f6fa -webkit-gradient(linear, left top, left bottom, from(#f5f6fa), to(#7f8fa6));
   background: #f5f6fa linear-gradient(#f5f6fa, #7f8fa6);
   border: none;
   border-radius: 3px;
-  -webkit-transition: all 0.3s;
   transition: all 0.3s;
   cursor: pointer;
 }
-
 .container .wrapper #buttons #play-rock {
   color: #c23616;
-  -webkit-box-shadow: 0 0 7px #c23616;
-          box-shadow: 0 0 7px #c23616;
-  background: #f5f6fa -webkit-gradient(linear, left top, left bottom, from(#f5f6fa), to(#c23616));
+  box-shadow: 0 0 7px #c23616;
   background: #f5f6fa linear-gradient(#f5f6fa, #c23616);
 }
-
 .container .wrapper #buttons #play-rock:hover {
   background: #c23616;
   color: #f5f6fa;
   letter-spacing: 2px;
 }
-
 .container .wrapper #buttons #play-paper {
   color: #e1b12c;
-  -webkit-box-shadow: 0 0 7px #fbc531;
-          box-shadow: 0 0 7px #fbc531;
-  background: #f5f6fa -webkit-gradient(linear, left top, left bottom, from(#f5f6fa), to(#fbc531));
+  box-shadow: 0 0 7px #fbc531;
   background: #f5f6fa linear-gradient(#f5f6fa, #fbc531);
 }
-
 .container .wrapper #buttons #play-paper:hover {
   background: #fbc531;
   color: #f5f6fa;
   letter-spacing: 2px;
 }
-
 .container .wrapper #buttons #play-scissors {
   color: #44bd32;
-  -webkit-box-shadow: 0 0 7px #4cd137;
-          box-shadow: 0 0 7px #4cd137;
-  background: #f5f6fa -webkit-gradient(linear, left top, left bottom, from(#f5f6fa), to(#4cd137));
+  box-shadow: 0 0 7px #4cd137;
   background: #f5f6fa linear-gradient(#f5f6fa, #4cd137);
 }
-
 .container .wrapper #buttons #play-scissors:hover {
   background: #4cd137;
   color: #f5f6fa;
   letter-spacing: 2px;
 }
-
 .container .wrapper #buttons .reset-btn {
   margin-top: 20px;
   width: 60%;
   color: #40739e;
-  -webkit-box-shadow: 0 0 7px #40739e;
-          box-shadow: 0 0 7px #40739e;
+  box-shadow: 0 0 7px #40739e;
 }
-
 .container .wrapper #buttons .reset-btn:hover {
   background: #40739e;
   color: #f5f6fa;
   letter-spacing: 3px;
 }
-
 .container .wrapper .statistics {
   margin-top: 2em;
   margin-bottom: -3.5em;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   text-align: center;
 }
-
 .container .wrapper .statistics p {
   font-weight: bold;
   margin-bottom: 1.5em;
 }
-/*# sourceMappingURL=style.css.map */
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3Mvc3R5bGUuc2NzcyIsInN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFpQkE7OztFQUdDLFNBQUE7RUFDQSxVQUFBO0VBQ0Esc0JBQUE7QUNoQkQ7O0FEbUJBO0VBQ0MsZ0JBQUE7RUFDQSxrQkFBQTtFQUNBLGFBQUE7RUFDQSxtQkE3Qlc7RUE4QlgscUNBaEJVO0FDQVg7O0FEbUJBO0VBQ0Msc0JBQUE7RUFDQSxxQkFBQTtBQ2hCRDs7QURtQkE7RUFDQyxjQWxDWTtFQW1DWixpQkFBQTtBQ2hCRDs7QURtQkE7RUFDQyxjQXRDYTtFQXVDYixpQkFBQTtBQ2hCRDs7QURtQkE7RUFDQyxjQTFDZ0I7RUEyQ2hCLGlCQUFBO0FDaEJEOztBRG1CQTtFQUNDLGtCQUFBO0VBQ0EsU0FBQTtFQUNBLE9BQUE7RUFDQSxRQUFBO0VBQ0Esa0JBQUE7RUFDQSx3Q0E1Q1U7RUE2Q1YsZUFBQTtFQUNBLG1CQUFBO0VBQ0EsY0E3RFc7QUM2Q1o7O0FEbUJBO0VBQ0Msa0JBQUE7RUFDQSxRQUFBO0VBQ0EsU0FBQTtFQUNBLGdDQUFBO0VBQ0EsWUFBQTtFQUNBLGFBQUE7RUFDQSxzQkFBQTtFQUNBLDhCQUFBO0VBQ0EsbUJBQUE7RUFDQSxVQUFBO0VBQ0EsV0FBQTtFQUNBLHFEQUFBO0VBQ0EsbUJBQUE7RUFDQSxVQUFBO0VBQ0Esb0JBcEVZO0FDb0RiO0FEa0JDO0VBQ0Msa0JBQUE7RUFDQSxTQUFBO0VBQ0EsV0FBQTtFQUNBLGVBNUVpQjtFQTZFakIsY0F2RlU7RUF3RlYsb0JBNUVXO0VBNkVYLGVBQUE7QUNoQkY7QURrQkU7RUFDQyxjQTFGVztBQzBFZDtBRG9CQztFQUNDLGVBQUE7RUFDQSxtQkFBQTtFQUNBLHdDQXBGUztBQ2tFWDtBRHFCQztFQUNDLFVBQUE7RUFDQSxrQkFBQTtFQUNBLGVBQUE7QUNuQkY7QURxQkU7RUFDQyxlQUFBO0VBQ0EsaUJBQUE7QUNuQkg7O0FEd0JBO0VBQ0Msa0JBQUE7RUFDQSxNQUFBO0VBQ0EsT0FBQTtFQUNBLFdBQUE7RUFDQSxZQUFBO0VBQ0EsOEJBQUE7RUFDQSxVQUFBO0VBQ0Esb0JBOUdZO0FDeUZiOztBRHdCQTtFQUNDLGtCQUFBO0VBQ0EsUUFBQTtFQUNBLFNBQUE7RUFDQSxnQ0FBQTtFQUNBLGNBQUE7RUFDQSxhQUFBO0VBQ0EsdUJBQUE7RUFDQSxtQkFBQTtFQUNBLGNBQUE7RUFDQSxZQUFBO0VBQ0EsV0FBQTtFQUNBLGlCQUFBO0VBQ0EsbUJBQUE7RUFDQSxxREFBQTtFQUNBLDJCQUFBO0FDckJEO0FEdUJDO0VBQ0Msa0JBQUE7RUFDQSxTQUFBO0VBQ0EsV0FBQTtBQ3JCRjtBRHVCRTtFQUNDLGVBMUlnQjtFQTJJaEIsY0FySlM7RUFzSlQsb0JBMUlVO0VBMklWLGVBQUE7QUNyQkg7QUR1Qkc7RUFDQyxjQXZKUztBQ2tJYjtBRDBCQztFQUNDLGFBQUE7RUFDQSxzQkFBQTtFQUNBLDhCQUFBO0VBQ0EsV0FBQTtFQUNBLFVBQUE7QUN4QkY7QUQwQkU7RUFDQyxhQUFBO0VBQ0EsZUFBQTtFQUNBLDZCQUFBO0VBQ0EsV0FBQTtFQUNBLGFBQUE7QUN4Qkg7QUQwQkc7RUFDQyxhQUFBO0VBQ0EsdUJBQUE7RUFDQSxtQkFBQTtFQUNBLFVBQUE7RUFDQSxhQUFBO0VBQ0EseUJBQUE7QUN4Qko7QUQwQkk7RUFDQyxpQkFBQTtFQUNBLGVBQUE7RUFDQSw4QkFBQTtFQUNBLG1CQUFBO0VBQ0Esd0NBM0tNO0FDbUpYO0FENkJFO0VBQ0MsYUFBQTtFQUNBLDZCQUFBO0VBQ0EsbUJBQUE7RUFDQSxlQUFBO0VBQ0EsV0FBQTtBQzNCSDtBRDZCRztFQUNDLFlBQUE7RUFDQSxZQUFBO0VBQ0EsZUFBQTtFQUNBLHlCQUFBO0VBQ0EsaUJBQUE7RUFDQSxxQ0E5TE87RUErTFAscURBQUE7RUFDQSxZQUFBO0VBQ0Esa0JBQUE7RUFDQSxvQkFwTVM7RUFxTVQsZUFBQTtBQzNCSjtBRDhCRztFQUNDLGNBaE5TO0VBaU5ULDJCQUFBO0VBQ0EscURBQUE7QUM1Qko7QUQ4Qkk7RUFDQyxtQkFyTlE7RUFzTlIsY0ExTk87RUEyTlAsbUJBQUE7QUM1Qkw7QURnQ0c7RUFDQyxjQUFBO0VBQ0EsMkJBQUE7RUFDQSxxREFBQTtBQzlCSjtBRGdDSTtFQUNDLG1CQWhPUztFQWlPVCxjQXRPTztFQXVPUCxtQkFBQTtBQzlCTDtBRGtDRztFQUNDLGNBQUE7RUFDQSwyQkFBQTtFQUNBLHFEQUFBO0FDaENKO0FEa0NJO0VBQ0MsbUJBM09ZO0VBNE9aLGNBbFBPO0VBbVBQLG1CQUFBO0FDaENMO0FEb0NHO0VBQ0MsZ0JBQUE7RUFDQSxVQUFBO0VBQ0EsY0FuUFU7RUFvUFYsMkJBQUE7QUNsQ0o7QURvQ0k7RUFDQyxtQkF2UFM7RUF3UFQsY0EvUE87RUFnUVAsbUJBQUE7QUNsQ0w7QUR1Q0U7RUFDQyxlQUFBO0VBQ0EscUJBQUE7RUFDQSxhQUFBO0VBQ0EsOEJBQUE7RUFDQSxrQkFBQTtBQ3JDSDtBRHVDRztFQUNDLGlCQUFBO0VBQ0Esb0JBQUE7QUNyQ0oiLCJmaWxlIjoic3R5bGUuY3NzIn0= */
