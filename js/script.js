@@ -3,9 +3,9 @@ let computerWins = 0
 let gamesPlayed = 0
 let playerWinrate = 0
 let computerWinrate = 0
-const rock = '<img src="images/rock_1.png">'
-const paper = '<img src="images/paper_1.png">'
-const scissors = '<img src="images/sci_1.png">'
+let rock = '<img src="images/rock_left_1.png">'
+let paper = '<img src="images/paper_left_1.png">'
+let scissors = '<img src="images/sci_left_1.png">'
 
 function playGame(playerInput) {
 	clearMessages()
@@ -66,3 +66,29 @@ document.getElementById('play-scissors').addEventListener('click', function () {
 document.querySelector('.reset-btn').addEventListener('click', clearMessages)
 document.querySelector('.info').addEventListener('click', showPopup)
 document.querySelector('.close-info').addEventListener('click', closePopup)
+
+// if (computerMove == rock && playerMove == paper) {
+// 	rock = '<img src="images/rock_paper_left.png">'
+// 	paper = '<img src="images/paper_rock_right.png">'
+// } else if (computerMove == paper && playerMove == scissors) {
+// 	paper = '<img src="images/paper_sci_left.png">'
+// 	scissors = '<img src="images/sci_paper_right.png">'
+// } else if (computerMove == scissors && playerMove == rock) {
+// 	scissors = '<img src="images/sci_rock_left.png">'
+// 	rock = '<img src="images/rock_sci_right.png">'
+// } else if (computerMove == rock && playerMove == rock) {
+// 	rock = '<img src="images/rock_left_2.png">'
+// } else if (computerMove == paper && playerMove == paper) {
+// 	paper = '<img src="images/paper_left_2.png">'
+// } else if (computerMove == scissors && playerMove == scissors) {
+// 	scissors = '<img src="images/sci_left_2.png">'
+// } else if (computerMove == paper && playerMove == rock) {
+// 	rock = '<img src="images/rock_paper_right.png">'
+// 	paper = '<img src="images/paper_rock_left.png">'
+// } else if (computerMove == scissors && playerMove == paper) {
+// 	paper = '<img src="images/paper_sci_right.png">'
+// 	scissors = '<img src="images/sci_paper_left.png">'
+// } else if (computerMove == rock && playerMove == scissors) {
+// 	scissors = '<img src="images/sci_rock_right.png">'
+// 	rock = '<img src="images/rock_sci_left.png">'
+// }
