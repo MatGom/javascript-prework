@@ -309,7 +309,7 @@ h1 {
 				text-transform: uppercase;
 				font-weight: bold;
 				font-family: $font-one;
-				background: $color-two linear-gradient($color-two, $color-five);
+				background: $color-two;
 				border: none;
 				border-radius: 3px;
 				transition: $transition;
@@ -318,8 +318,7 @@ h1 {
 
 			#play-rock {
 				color: $rock-color;
-				box-shadow: 0 0 7px $rock-color;
-				background: $color-two linear-gradient($color-two, $rock-color);
+				box-shadow: 0 0 10px $rock-color;
 
 				&:hover {
 					background: $rock-color;
@@ -330,8 +329,7 @@ h1 {
 
 			#play-paper {
 				color: #e1b12c;
-				box-shadow: 0 0 7px $paper-color;
-				background: $color-two linear-gradient($color-two, $paper-color);
+				box-shadow: 0 0 10px $paper-color;
 
 				&:hover {
 					background: $paper-color;
@@ -342,8 +340,7 @@ h1 {
 
 			#play-scissors {
 				color: #44bd32;
-				box-shadow: 0 0 7px $scissors-color;
-				background: $color-two linear-gradient($color-two, $scissors-color);
+				box-shadow: 0 0 10px $scissors-color;
 
 				&:hover {
 					background: $scissors-color;
@@ -356,7 +353,7 @@ h1 {
 				margin-top: 20px;
 				width: 60%;
 				color: $reset-color;
-				box-shadow: 0 0 7px $reset-color;
+				box-shadow: 0 0 10px $reset-color;
 
 				&:hover {
 					background: $reset-color;

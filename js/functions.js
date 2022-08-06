@@ -20,8 +20,7 @@ const resetStats = () => {
 	gamesPlayed = 0
 	playerWinrate = 0
 	computerWinrate = 0
-	document.getElementById('messages').style.opacity = '0'
-	document.querySelector('h3').style.display = 'block'
+	clearMessages()
 }
 
 const showPopup = () => {

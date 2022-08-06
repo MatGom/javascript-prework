@@ -9,7 +9,6 @@ let scissors = '<img src="images/sci_left_1.png">'
 
 function playGame(playerInput) {
 	clearMessages()
-	document.getElementById('messages').style.opacity = '1'
 
 	gamesPlayed++
 	document.querySelector('.games-played').textContent = gamesPlayed
