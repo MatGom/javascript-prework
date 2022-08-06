@@ -209,6 +209,16 @@ h1 {
 	transition: $transition;
 }
 
+@keyframes show {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
 .container {
 	position: absolute;
 	top: 50%;
@@ -274,11 +284,22 @@ h1 {
 				width: 40%;
 				height: 100px;
 				text-transform: uppercase;
+				opacity: 0;
 
 				&:nth-child(1),
 				&:nth-child(2) {
 					font-size: 22px;
 					font-weight: bold;
+				}
+
+				&:nth-child(1),
+				&:nth-child(3) {
+					animation: show 1s forwards;
+				}
+
+				&:nth-child(2),
+				&:nth-child(4) {
+					animation: show 1s 0.5s forwards;
 				}
 
 				&:last-of-type {
@@ -287,6 +308,7 @@ h1 {
 					border-bottom: 2px solid black;
 					letter-spacing: 4px;
 					font-family: $font-two;
+					animation: show 1s 1s forwards;
 				}
 
 				img {
