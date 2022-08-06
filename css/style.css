@@ -67,7 +67,7 @@ h1 {
 
 .animated-paper {
   top: 5%;
-  left: 80%;
+  right: 5%;
   background-image: url("../images/paper_left_1.png");
   -webkit-animation: paper 0.5s infinite linear alternate;
           animation: paper 0.5s infinite linear alternate;
