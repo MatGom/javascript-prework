@@ -9,6 +9,7 @@ let scissors = '<img src="images/sci_left_1.png">'
 
 function playGame(playerInput) {
 	clearMessages()
+	document.getElementById('messages').style.opacity = '1'
 
 	gamesPlayed++
 	document.querySelector('.games-played').textContent = gamesPlayed
@@ -65,7 +66,7 @@ document.getElementById('play-paper').addEventListener('click', function () {
 document.getElementById('play-scissors').addEventListener('click', function () {
 	playGame(3)
 })
-document.querySelector('.reset-btn').addEventListener('click', clearMessages)
+document.querySelector('.reset-btn').addEventListener('click', resetStats)
 document.querySelector('.info').addEventListener('click', showPopup)
 document.querySelector('.close-info').addEventListener('click', closePopup)
 
