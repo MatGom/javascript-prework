@@ -3,9 +3,9 @@ let computerWins = 0
 let gamesPlayed = 0
 let playerWinrate = 0
 let computerWinrate = 0
-let rock = '<img src="images/rock_left_1.png">'
-let paper = '<img src="images/paper_left_1.png">'
-let scissors = '<img src="images/sci_left_1.png">'
+let rock = '<img src="images/rock_sci_right.png">'
+let paper = '<img src="images/paper_rock_right.png">'
+let scissors = '<img src="images/sci_paper_right.png">'
 
 function playGame(playerInput) {
 	clearMessages()
