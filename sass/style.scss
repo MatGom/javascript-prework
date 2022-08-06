@@ -3,6 +3,7 @@ $color-two: #f5f6fa;
 $color-three: #e84118;
 $color-four: #00a8ff;
 $color-five: #7f8fa6;
+$color-six: #dcdde1;
 $rock-color: #c23616;
 $paper-color: #fbc531;
 $scissors-color: #4cd137;
@@ -27,7 +28,7 @@ body {
 	overflow: hidden;
 	position: relative;
 	height: 100vh;
-	background: $color-one;
+	background: $reset-color linear-gradient($color-one, $color-five);
 	font-family: $font-one;
 }
 
@@ -69,7 +70,7 @@ h1 {
 	height: 170px;
 	background-position: center;
 	background-size: cover;
-	z-index: 3;
+	z-index: 1;
 }
 
 .animated-rock {
@@ -222,7 +223,7 @@ h1 {
 	width: 70vw;
 	max-width: 1000px;
 	border-radius: 10px;
-	background: $color-two linear-gradient($color-two, $color-five);
+	background: $color-six;
 	box-shadow: 0 0 4px $color-two;
 
 	h3 {
