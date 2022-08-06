@@ -28,8 +28,9 @@ body {
 	overflow: hidden;
 	position: relative;
 	height: 100vh;
-	background: $reset-color linear-gradient($color-one, $color-five);
-	// background-image: url(../images/background1.png);
+	background-image: url(../images/background9.png);
+	background-position: center;
+	background-size: cover;
 	font-family: $font-one;
 }
 
@@ -234,8 +235,8 @@ h1 {
 	width: 70vw;
 	max-width: 1000px;
 	border-radius: 10px;
-	background: $color-six;
-	box-shadow: 0 0 4px $color-two;
+	background-image: url(../images/background11.png);
+	box-shadow: 5px 5px 10px $color-one;
 
 	h3 {
 		margin-top: -3em;
@@ -254,12 +255,12 @@ h1 {
 
 		i {
 			font-size: $option-icon-size;
-			color: $color-one;
+			color: $reset-color;
 			transition: $transition;
 			cursor: pointer;
 
 			&:hover {
-				color: $color-four;
+				color: $color-one;
 			}
 		}
 	}
