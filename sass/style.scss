@@ -336,13 +336,17 @@ h1 {
 				border-radius: 3px;
 				transition: $transition;
 				cursor: pointer;
+
+				&:disabled {
+					background-color: $color-five;
+				}
 			}
 
 			#play-rock {
 				color: $rock-color;
 				box-shadow: 0 0 10px $rock-color;
 
-				&:hover {
+				&:hover:enabled {
 					background: $rock-color;
 					color: $color-two;
 					letter-spacing: 2px;
@@ -353,7 +357,7 @@ h1 {
 				color: #e1b12c;
 				box-shadow: 0 0 10px $paper-color;
 
-				&:hover {
+				&:hover:enabled {
 					background: $paper-color;
 					color: $color-two;
 					letter-spacing: 2px;
@@ -364,7 +368,7 @@ h1 {
 				color: #44bd32;
 				box-shadow: 0 0 10px $scissors-color;
 
-				&:hover {
+				&:hover:enabled {
 					background: $scissors-color;
 					color: $color-two;
 					letter-spacing: 2px;
@@ -377,7 +381,7 @@ h1 {
 				color: $reset-color;
 				box-shadow: 0 0 10px $reset-color;
 
-				&:hover {
+				&:hover:enabled {
 					background: $reset-color;
 					color: $color-two;
 					letter-spacing: 3px;

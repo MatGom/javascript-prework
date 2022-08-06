@@ -51,6 +51,13 @@ function playGame(playerInput) {
 		}
 	}
 
+	document.querySelectorAll('button').forEach(button => {
+		button.disabled = true
+		setTimeout(() => {
+			button.disabled = false
+		}, 1100)
+	})
+
 	document.querySelector('h3').style.display = 'none'
 
 	displayResult(computerMove, playerMove)
