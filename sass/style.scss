@@ -228,9 +228,12 @@ h1 {
 
 	h3 {
 		margin-top: -3em;
-		font-size: 36px;
+		font-size: 46px;
+		color: $color-one;
+		text-shadow: 3px 3px $color-five;
 		text-align: center;
 		position: absolute;
+		font-family: $font-two;
 	}
 
 	.info {
