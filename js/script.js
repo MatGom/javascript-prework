@@ -19,11 +19,11 @@
 	}
 
 	const resetStats = () => {
-		document.querySelector('.player-wins').textContent = 0
-		document.querySelector('.computer-wins').textContent = 0
-		document.querySelector('.player-rate').textContent = `0%`
-		document.querySelector('.computer-rate').textContent = `0%`
-		document.querySelector('.games-played').textContent = 0
+		playerWinsCounter.textContent = 0
+		computerWinsCounter.textContent = 0
+		playerWinrateStat.textContent = `0%`
+		computerWinrateStat.textContent = `0%`
+		gamesCounter.textContent = 0
 		playerWins = 0
 		computerWins = 0
 		gamesPlayed = 0
@@ -33,19 +33,19 @@
 	}
 
 	const calculateWinrate = () => {
-		document.querySelector('.player-wins').textContent = playerWins
-		document.querySelector('.computer-wins').textContent = computerWins
+		playerWinsCounter.textContent = playerWins
+		computerWinsCounter.textContent = computerWins
 		playerWinrate = ((playerWins / gamesPlayed) * 100).toFixed(1)
-		document.querySelector('.player-rate').textContent = `${playerWinrate}%`
+		playerWinrateStat.textContent = `${playerWinrate}%`
 		computerWinrate = ((computerWins / gamesPlayed) * 100).toFixed(1)
-		document.querySelector('.computer-rate').textContent = `${computerWinrate}%`
+		computerWinrateStat.textContent = `${computerWinrate}%`
 	}
 
 	const playGame = function (playerInput) {
 		clearMessages()
 
 		gamesPlayed++
-		document.querySelector('.games-played').textContent = gamesPlayed
+		gamesCounter.textContent = gamesPlayed
 
 		let randomNumber = Math.floor(Math.random() * 3 + 1)
 		let computerMove = getMoveName(randomNumber)
@@ -77,28 +77,28 @@
 			}
 		}
 
-		document.querySelectorAll('button').forEach(button => {
+		playBtns.forEach(button => {
 			button.disabled = true
 			setTimeout(() => {
 				button.disabled = false
 			}, 1100)
 		})
 
-		document.querySelector('h3').style.display = 'none'
+		introTitle.style.display = 'none'
 
 		displayResult(computerMove, playerMove)
 	}
 
-	document.getElementById('play-rock').addEventListener('click', function () {
+	rockBtn.addEventListener('click', function () {
 		playGame(1)
 	})
-	document.getElementById('play-paper').addEventListener('click', function () {
+	paperBtn.addEventListener('click', function () {
 		playGame(2)
 	})
-	document.getElementById('play-scissors').addEventListener('click', function () {
+	scissorsBtn.addEventListener('click', function () {
 		playGame(3)
 	})
-	document.querySelector('.reset-btn').addEventListener('click', resetStats)
-	document.querySelector('.info').addEventListener('click', showPopup)
-	document.querySelector('.close-info').addEventListener('click', closePopup)
+	resetBtn.addEventListener('click', resetStats)
+	showPopupIcon.addEventListener('click', showPopup)
+	closePopupIcon.addEventListener('click', closePopup)
 }
